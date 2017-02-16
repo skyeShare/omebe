@@ -33,10 +33,6 @@
 <body>
 <header>
   <nav class="nav navbar">
-    <div id="userContainer">
-      <div id="userText">Welcome to Omebe, <%= username %>!</div>
-    </div>
-    <button id="logOutBtn" type="button" class="btn wButton">Logout</button>
     <div class="navbar-header">
       <a href="#" class="logo"><img id="omebe-logo" src="./logo.png" /></a>
     </div>
@@ -67,11 +63,18 @@
         </div>
       </div>
       <div id="userPanel">
-        <div id = "reset"><button id = "clearButton" type="button" class="btn userBtn">Reset Board</button></div>
-        <div id="saveBoard"><button id="saveBoardBtn" type="button" class="btn userBtn" data-toggle="modal" data-target="#saveBoardModal">Save Board</button></div>
-        <div id="loadBoard"><button id="loadBoardBtn" type="button" class="btn userBtn" data-toggle="modal" data-target="#loadBoardModal">Load Board</button></div>
-        <div id="shareBoard"><button id="shareBoardBtn" type="button" class="btn userBtn" data-toggle="modal" data-target="#shareBoardModal">Share Board</button></div>
-        <div id="invitations"><button id="invitationsBtn" type="button" class="btn userBtn" data-toggle="modal" data-target="#invitationsModal">Invitations</button></div>
+        <div id="userContainer">
+          <div id="userText">Welcome to Omebe, <%= username %>!</div>
+          <button id="logOutBtn" type="button" class="btn wButton">Logout</button>
+        </div>
+        <div class="clear"></div>
+        <div id="userButtons">
+          <div id = "reset"><button id = "clearButton" type="button" class="btn userBtn">Reset Board</button></div>
+          <div id="saveBoard"><button id="saveBoardBtn" type="button" class="btn userBtn" data-toggle="modal" data-target="#saveBoardModal">Save Board</button></div>
+          <div id="loadBoard"><button id="loadBoardBtn" type="button" class="btn userBtn" data-toggle="modal" data-target="#loadBoardModal">Load Board</button></div>
+          <div id="shareBoard"><button id="shareBoardBtn" type="button" class="btn userBtn" data-toggle="modal" data-target="#shareBoardModal">Share Board</button></div>
+          <div id="invitations"><button id="invitationsBtn" type="button" class="btn userBtn" data-toggle="modal" data-target="#invitationsModal">Invitations</button></div>
+        </div>
       </div>
     </div>
     <div id="canvass-box">
