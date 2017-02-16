@@ -72,6 +72,11 @@ $('#saveBoardBtn').click(function() {
     }
   })
 });
+$('#clearButton').click(function() {
+  let canvas = $('#drawing');
+  let ctx = canvas[0].getContext('2d');
+  ctx.clearRect(0, 0, canvas[0].width, canvas[0].height);
+})
 
 $('#loadBoardBtn').click(function() {
   const data = {};
@@ -139,7 +144,7 @@ $(".js-ajax").submit(function() {
   let data = $(this).serialize();
   console.log('serialized', data);
   let route = data.match(/route=(.*?)&/);
-  let url = 'http://localhost:8080' + '/' + route[1];
+  let url = '/' + route[1];
   event.preventDefault();
   console.log('data', data, 'route', route[1]);
 
