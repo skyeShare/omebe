@@ -34,16 +34,18 @@ body, html{
 }
 
 #logOutBtn {
-  position:relative;
-  float: left;
-  left: 150px;
-  margin:8px 0 0 15px;
+  position: relative;
+  margin: 8px 0 0 15px;
 }
 
 #userText {
-  width: 33%;
-  margin: 0 auto;
+  width: 100%;
   font-size: 24px;
+  float: left;
+}
+
+#userButtons {
+  margin-top: 20px;
 }
 
 h1 {
@@ -175,6 +177,10 @@ input::-moz-focus-outer {
 
 .hiddenBtn {
   display: none;
+}
+
+.clear {
+  clear: both;
 }
 
 #advert, #userPanel {
@@ -323,7 +329,16 @@ input::-moz-focus-outer {
 }
 
 .userBtn {
-  width: 120px;
+  width: 400px;
+  font-size: 25px;
+  height: 50px;
+  margin: 5px;
+}
+
+.boardBtn {
+  width: 150px;
+  font-size: 15px;
+  height: 50px;
   margin: 5px;
 }
 
