@@ -37,8 +37,11 @@ const boardController = {
             }).then((boards) => {
                 if(!boards[0]){
                     req.noBoards = true;
+                    next()
                 }
-                req.boards = boards
+                req.boards = boards.map((board) => {
+                    return board.board_id;
+                })
                 next()
             }).catch((err) => {
                 req.noBoards = true;

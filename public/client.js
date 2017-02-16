@@ -48,7 +48,7 @@ $(".js-ajax").submit(function() {
   let data = $(this).serialize();
   console.log('serialized', data);
   let route = data.match(/route=(.*?)&/);
-  let url = 'http://localhost:8080' + '/' + route[1];
+  let url = '/' + route[1];
   event.preventDefault();
   console.log('data', data, 'route', route[1]);
 

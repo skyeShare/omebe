@@ -91,3 +91,4 @@ io.on('connection', function (socket) {
     io.emit('draw_line', { line: data.line });
   });
 });
+module.exports = server
